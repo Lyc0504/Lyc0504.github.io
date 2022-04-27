@@ -1,0 +1,135 @@
+/* cover */
+.shigure-cover {
+  width: 250px;
+  height: 250px;
+  border: 3px solid;
+  border-radius: 50%;
+  border-color: #df9e89;
+}
+.cover-main {
+  /*color: #34495e !important;*/
+  text-shadow: 0px 0px 6px #999;
+}
+.mask {
+  opacity: 0.4 !important;
+  background-color: var(--background) !important;
+}
+
+/* footer */
+.footer {
+  text-align: right;
+  font-style: italic;
+  font-size: 12px;
+  color: gray;
+}
+
+/* comment */
+.v[data-class='v'] .vwrap .vemojis {
+  max-height: 188px !important;
+}
+.v[data-class='v'] .vemojis i {
+  width: 72px !important;
+}
+.v[data-class='v'] .vemoji,
+.v[data-class='v'] .emoji {
+  height: 100% !important;
+  width: 100% !important;
+  max-height: 144px !important;
+  max-width: 144px !important;
+}
+.v[data-class='v'] .vinput,
+.v[data-class='v'] .veditor,
+.v[data-class='v'] .status-bar,
+.v[data-class='v'] .vbtn,
+.v[data-class='v'] p,
+.v[data-class='v'] pre code {
+  font-family: XiaolaiSC !important;
+  color: var(--textColor) !important;
+}
+.markdown-section pre > code {
+  font-family: 'Courier New', XiaolaiSC;
+}
+
+/* player */
+.aplayer,
+.aplayer .aplayer-body,
+.aplayer .aplayer-list {
+  background-color: var(--background) !important;
+  border-color: var(--codeBackgroundColor) !important;
+  font-family: XiaolaiSC;
+}
+.aplayer .aplayer-info,
+.aplayer .aplayer-list ol li {
+  border-color: var(--codeBackgroundColor) !important;
+}
+.aplayer .aplayer-list ol li.aplayer-list-light {
+  background-color: var(--blockQuoteColor) !important;
+}
+.aplayer .aplayer-list ol li .aplayer-list-title,
+.aplayer .aplayer-list ol li .aplayer-list-index,
+.aplayer .aplayer-list ol li .aplayer-list-author {
+  color: var(--textColor);
+}
+.aplayer .aplayer-list ol li.aplayer-list-light .aplayer-list-title,
+.aplayer .aplayer-list ol li.aplayer-list-light .aplayer-list-index,
+.aplayer .aplayer-list ol li.aplayer-list-light .aplayer-list-author {
+  color: var(--background) !important;
+}
+.aplayer .aplayer-list ol li:hover {
+  background-color: var(--codeBackgroundColor);
+  color: var(--textColor) !important;
+}
+.aplayer
+  .aplayer-info
+  .aplayer-controller
+  .aplayer-bar-wrap
+  .aplayer-bar
+  .aplayer-played,
+.aplayer .aplayer-list ol li.aplayer-list-light .aplayer-list-cur,
+.aplayer
+  .aplayer-info
+  .aplayer-controller
+  .aplayer-bar-wrap
+  .aplayer-bar
+  .aplayer-played
+  .aplayer-thumb,
+.aplayer
+  .aplayer-info
+  .aplayer-controller
+  .aplayer-volume-wrap
+  .aplayer-volume-bar-wrap
+  .aplayer-volume-bar
+  .aplayer-volume {
+  background: var(--accent) !important;
+}
+.aplayer .aplayer-miniswitcher {
+  background-color: var(--codeBackgroundColor);
+}
+.aplayer .aplayer-miniswitcher:hover {
+  background-color: var(--blockQuoteColor);
+}
+.aplayer .aplayer-lrc p {
+  font-size: 15px !important;
+}
+.aplayer .aplayer-lrc p.aplayer-lrc-current {
+  text-shadow: -1px -1px 0px var(--textColor);
+}
+@media screen and (max-width: 768px) {
+  .aplayer.aplayer-fixed,
+  .aplayer.aplayer-fixed .aplayer-body {
+    bottom: 40px;
+  }
+}
+
+/* global */
+html {
+  --siteFont: XiaolaiSC !important;
+  --codeFontFamily: XiaolaiSC !important;
+  --coverBackground: url('https://raw.githubusercontents.com/lgc2333/ShigureBotMenu/master/src/imgs/95838919_p0.png')
+    center center / cover !important;
+}
+@font-face {
+  font-family: 'XiaolaiSC';
+  src: url('https://raw.githubusercontents.com/lxgw/kose-font/master/TTF%20(Simplified%20Chinese)/XiaolaiMonoSC-Regular.ttf')
+    format('truetype');
+}
